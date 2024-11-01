@@ -1,0 +1,381 @@
+/* ___________________Start Global Styles__________________ */
+* {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+:root {
+  --bg-main-color: #0078ff;
+  --bg-sec-color: #f5f5f5;
+  --text-p-color: #4e4e4e;
+}
+
+.line {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.line::after {
+  content: "";
+  width: 2.75rem;
+  height: 5px;
+  background-color: var(--bg-main-color);
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.line-2 {
+  position: relative;
+}
+
+.line-2::after {
+  content: "";
+  width: 6.75rem;
+  height: 3px;
+  background-color: var(--bg-main-color);
+  position: absolute;
+  top: 130%;
+  left: 0;
+}
+/* ___________________End Global Styles__________________ */
+/* ___________________Start Navbar Styles__________________ */
+nav {
+  background-color: rgba(0, 0, 0, 0.9);
+  font-weight: bold;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  pointer-events: none;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link:hover.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  left: 10px;
+  top: 35px;
+  background-color: #fff;
+}
+
+.nav-link.active.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  left: 10px;
+  top: 35px;
+  background-color: #fff;
+}
+
+/* ___________________End Navbar Styles__________________ */
+/* ___________________Start Header Styles__________________ */
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home div h1 {
+  font-size: 4.5rem;
+}
+.home div span {
+  font-size: 2.5rem;
+}
+/* ___________________End Header Styles__________________ */
+/* ___________________Start About Styles__________________ */
+.about {
+  background-color: var(--bg-sec-color);
+}
+
+.about .container {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.user-content span {
+  font-weight: bolder;
+}
+
+.skill p {
+  margin-top: 1.25rem;
+}
+
+.about-content h3 {
+  font-size: 2rem;
+  position: relative;
+}
+
+.about-content h3::after {
+  content: "";
+  width: 6.25rem;
+  height: 3px;
+  background-color: var(--bg-main-color);
+  position: absolute;
+  top: 120%;
+  left: 0;
+}
+
+.about-content p {
+  font-size: 1.25rem;
+  color: var(--text-p-color);
+  font-weight: 300;
+}
+
+/* ___________________End About Styles__________________ */
+/* ___________________Start Services Styles__________________ */
+.services {
+  background-color: var(--bg-sec-color);
+}
+
+.services p {
+  position: relative;
+  margin-bottom: 3.5rem;
+}
+
+.service-box {
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0);
+}
+
+.service-icon {
+  width: 100px;
+  height: 100px;
+  font-size: 2.25rem;
+  margin: auto;
+  box-shadow: 0 0 0 10px #0078ff;
+  transition: 0.3s;
+}
+
+.service-box:hover .service-icon {
+  background-color: var(--bg-main-color);
+  box-shadow: 0 0 0 10px #cde1f8;
+  color: white;
+}
+
+.service-box p {
+  color: var(--text-p-color);
+}
+/* ___________________End Services Styles__________________ */
+/* ___________________Start Counter Styles__________________ */
+.section-counter {
+  background-image: linear-gradient(
+      rgba(0, 120, 255, 0.7),
+      rgba(0, 120, 255, 0.7)
+    ),
+    url(../images/counters-bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.counter-icon {
+  width: 70px;
+  height: 70px;
+  font-size: 1.5rem;
+  margin: auto;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.7);
+  color: #fff;
+}
+/* ___________________End Counter Styles__________________ */
+/* ___________________Start Work Styles__________________ */
+.work {
+  background-color: var(--bg-sec-color);
+}
+
+.work-card {
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+.work-card-img {
+  overflow: hidden;
+}
+
+.work-card:hover img {
+  transform: scale(1.2);
+}
+
+.work-card img {
+  cursor: pointer;
+  transition: 1s;
+}
+
+.work-card span {
+  font-size: 14px;
+}
+
+.work-content span:first-of-type {
+  color: var(--bg-main-color);
+}
+
+.plus {
+  width: 40px;
+  height: 40px;
+  font-size: 28px;
+  font-weight: bolder;
+  color: #0078ff;
+  border: 1px solid #0078ff;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+/* ___________________End Work Styles__________________ */
+/* ___________________Start Testimonial Styles__________________ */
+.testimonial {
+  background-image: linear-gradient(
+      rgba(0, 120, 255, 0.7),
+      rgba(0, 120, 255, 0.7)
+    ),
+    url(../images/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.testi-parag {
+  font-size: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.carousel-indicators [data-bs-target] {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+/* ___________________End Testimonial Styles__________________ */
+/* ___________________Start Blog Styles__________________ */
+.blog {
+  background-color: var(--bg-sec-color);
+}
+
+.card-title {
+  transition: 1s;
+  cursor: pointer;
+}
+
+.card-title:hover {
+  color: #0078ff;
+}
+.card-footer img,
+.card-footer span:nth-of-type(1) {
+  cursor: pointer;
+  transition: 1s;
+}
+
+.card-footer span:nth-of-type(1):hover {
+  color: #0078ff;
+}
+
+.badge {
+  font-size: 16px;
+  font-weight: 400;
+  left: 50%;
+  bottom: 20%;
+  transform: translate(-50%);
+}
+
+/* ___________________End Blog Styles__________________ */
+/* ___________________Start Contact Styles__________________ */
+.contact {
+  background-image: linear-gradient(
+      rgba(0, 120, 255, 0.7),
+      rgba(0, 120, 255, 0.7)
+    ),
+    url(../images/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.contact .container {
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contact-content p {
+  color: var(--text-p-color);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.contact-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-content ul li {
+  padding: 10px 0;
+}
+
+.contact-content ul li i {
+  color: #0078ff;
+  margin-right: 10px;
+}
+
+.social {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.social div {
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 0 4px #0078ff;
+  transition: 0.5s;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.social li div i {
+  color: #000;
+  transition: 0.5s;
+}
+
+.social div:hover {
+  background-color: var(--bg-main-color);
+  box-shadow: 0 0 0 4px #cde1f8;
+  color: white;
+}
+
+.social div:hover i {
+  color: white;
+}
+.btn {
+  margin: auto;
+  display: block;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  text-decoration: none;
+  box-shadow: 0 0 0 4px #cde1f8;
+}
+
+/* ___________________End Contact Styles__________________ */
+
+/* ___________________Start Footer Styles__________________ */
+footer {
+  background-color: #0062d3;
+}
+
+/* ___________________End Footer Styles__________________ */
